@@ -4,134 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Life</title>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            display: flex;
-            flex-direction: column;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .navbar {
-            background-color: #3b5998;
-            color: white;
-            padding: 0 20px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            height: 45px;
-        }
-        .nav {
-            display: flex;
-            height: 20px;
-            margin-bottom: 4px;
-        }
-        .nav a {
-            color: black;
-            text-decoration: none;
-            padding: 2px 0;
-            font-size: 11px;
-            position: relative;
-            display: inline-block;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            width: 80px;
-        }
-        .nav a:not(:last-child) {
-            transform: skew(-20deg);
-            margin-right: -10px;
-        }
-        .nav a:not(:last-child) span {
-            display: inline-block;
-            transform: skew(20deg);
-        }
-        .nav a:nth-child(1) {
-            background-color: #d4d4d4;
-            z-index: 3;
-        }
-        .nav a:nth-child(2) {
-            background-color: #e4e4e4;
-            z-index: 2;
-        }
-        .nav a:last-child {
-            background-color: #f4f4f4;
-            z-index: 1;
-            clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-        }
-        .container {
-            flex-grow: 1;
-            display: flex;
-            max-width: 900px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        .sidebar {
-            width: 150px;
-            padding-right: 14px;
-            padding-top: 20px;
-            text-align: right;
-            border-right: 1px solid #ccc;
-            transition: border-color 0.3s;
-        }
-        .sidebar h3 {
-            margin-top: 0;
-            color: #333;
-            font-size: 14px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0 0 20px 0;
-            color: #666;
-            font-size: 12px;
-        }
-        .sidebar li {
-            margin-bottom: 5px;
-            transition: color 0.3s;
-        }
-        .sidebar a {
-            text-decoration: none;
-            color: #666;
-            transition: color 0.3s;
-        }
-        .main-content {
-            flex-grow: 1;
-            padding: 20px 0 20px 15px;
-        }
-        .post-area {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 10px;
-            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-        }
-        .post-title {
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .post-body {
-            margin-bottom: 10px;
-            font-size: 12px;
-        }
-        .post-button {
-            background-color: #3b5998;
-            color: white;
-            border: none;
-            padding: 3px 8px;
-            cursor: pointer;
-            font-size: 12px;
-            float: right;
-        }
-    </style>
-    <link rel="stylesheet" href="./darkmode.css">
+    <link rel="stylesheet" href="./design.css" />
+    <link rel="stylesheet" href="./darkmode.css" />
+
+
 </head>
 <body>
     <div class="navbar">
@@ -148,7 +24,7 @@
                 <li><a href="index.html">Post</a></li>
                 <li><a href="settings.html">Settings</a></li>
             </ul>
-            <h3>Forum Title</h3>
+            <h3>Personal Life</h3>
             <ul>
                 <li>1 Member - 1 Online</li>
                 <li>Description</li>
@@ -168,12 +44,7 @@
         </div>
     </div>
 
-    <script>
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-    </script>
+    <script src="./theme.js"></script>
+
 </body>
 </html>
