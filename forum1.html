@@ -15,6 +15,7 @@
             background-color: #f2f2f2;
             display: flex;
             flex-direction: column;
+            transition: background-color 0.3s, color 0.3s;
         }
         .navbar {
             background-color: #3b5998;
@@ -76,12 +77,14 @@
             padding-top: 20px;
             text-align: right;
             border-right: 1px solid #ccc;
+            transition: border-color 0.3s;
         }
         .sidebar h3 {
             margin-top: 0;
             color: #333;
             font-size: 14px;
             font-weight: bold;
+            transition: color 0.3s;
         }
         .sidebar ul {
             list-style-type: none;
@@ -92,10 +95,12 @@
         }
         .sidebar li {
             margin-bottom: 5px;
+            transition: color 0.3s;
         }
         .sidebar a {
             text-decoration: none;
             color: #666;
+            transition: color 0.3s;
         }
         .main-content {
             flex-grow: 1;
@@ -105,6 +110,7 @@
             background-color: white;
             border: 1px solid #ddd;
             padding: 10px;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
         }
         .post-title {
             font-size: 14px;
@@ -125,6 +131,7 @@
             float: right;
         }
     </style>
+    <link rel="stylesheet" href="./darkmode.css">
 </head>
 <body>
     <div class="navbar">
@@ -141,7 +148,7 @@
                 <li><a href="index.html">Post</a></li>
                 <li><a href="settings.html">Settings</a></li>
             </ul>
-            <h3>Personal Life</h3>
+            <h3>Forum Title</h3>
             <ul>
                 <li>1 Member - 1 Online</li>
                 <li>Description</li>
@@ -160,5 +167,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
 </body>
 </html>
