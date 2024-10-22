@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Life</title>
-    <link rel="stylesheet" href="./design.css" />
-    <link rel="stylesheet" href="./darkmode.css" />
-
-
+    <link rel="stylesheet" href="./styles/design.css" />
+    <link rel="stylesheet" href="./styles/darkmode.css" />
 </head>
 <body>
     <div class="navbar">
         <div class="nav">
             <a href="forum1.html">Personal Life</a>
             <a href="forum2.html">Education</a>
-            <a href="settings.html">Settings</a>
+            <a href="forum3.html">Others</a>
         </div>
     </div>
     <div class="container">
         <div class="sidebar">
             <h3>My Profile</h3>
             <ul>
-                <li><a href="index.html">Post</a></li>
+                <li><a href="index.html">Explore</a></li>
                 <li><a href="settings.html">Settings</a></li>
             </ul>
             <h3>Personal Life</h3>
@@ -30,9 +28,7 @@
                 <li>Description</li>
             </ul>
             <h3>Joined Forums</h3>
-            <ul>
-                <li><a href="forum1.html">Personal Life</a></li>
-                <li><a href="forum2.html">Education</a></li>
+            <ul id="forums-list">
             </ul>
         </div>
         <div class="main-content">
@@ -42,11 +38,11 @@
                 <button class="post-button">Post</button>
                 <div style="clear: both;"></div>
             </div>
-            <script src="./postforum1.js"></script>
+            <script src="./postforum.js"></script>
         </div>
     </div>
-
     <script src="./theme.js"></script>
-
+    
+    <script src="./sidebar.js"></script>
 </body>
 </html>
