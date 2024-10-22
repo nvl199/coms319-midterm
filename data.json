@@ -1,0 +1,19 @@
+{
+    "forums": [
+        {
+            "name": "Personal Life",
+            "avatar": "./images/personal.jpg",
+            "url": "forum1.html"
+        },
+        {
+            "name": "Education",
+            "avatar": "./images/educ.jpg",
+            "url": "forum2.html"
+        },
+        {
+            "name": "Others",
+            "avatar": "./images/miscellaneous.jpg",
+            "url": "forum3.html"
+        }
+    ]
+}
