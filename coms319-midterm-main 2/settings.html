@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+   
+    <link rel="stylesheet" href="./styles/design.css" />
+    <link rel="stylesheet" href="./styles/darkmode.css" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav">
+            <a href="forum1.html"><span>Personal Life</span></a>
+            <a href="forum2.html"><span>Education</span></a>
+            <a href="settings.html">Settings</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>My Profile</h3>
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <h3>Settings</h3>
+            <ul>
+                <li>1 Member - 1 Online</li>
+                <li>Description</li>
+            </ul>
+            <h3>Joined Forums</h3>
+            <ul id="forums-list">
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="post-area">
+                <div class="post-title">Theme Settings</div>
+                <div class="post-body">
+                    <div class="theme-option">
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="theme-label" id="theme-text">Light Mode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+      <script src="./theme.js"></script>
+      <script src="./sidebar.js"></script>
+</body>
+</html>
